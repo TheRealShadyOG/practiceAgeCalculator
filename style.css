@@ -1,0 +1,70 @@
+body, button, input {
+    font-family: "Courier New", sans-serif;
+    color: grey;
+}
+
+#todaydate, input, #results {
+    border: 1px solid grey;
+    border-radius: 2px;
+    background-color: white;
+    font-size: 16px;
+    text-align: center;
+    width: 200px;
+    height: 20px;
+    padding: 2px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: azure;
+    margin: 0;
+}
+
+.headermaintext {
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.calculatorbody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.currentdate {
+    display: flex;
+    align-items: center;
+    gap: 44px;
+    margin-left: 26px;
+}
+
+.results {
+    display: flex;
+    gap: 32px;
+    margin-left: 20px;
+    margin-bottom: 16px;
+    font-size: 24px;
+}
+
+.selectors {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    flex-wrap: wrap;
+}
+
+.selectorgroupone, .selectorgrouptwo {
+    display: flex;
+    gap: 4px;
+}
+
+button {
+    border: 1px solid grey;
+    border-radius: 2px;
+    background-color: white;
+}
