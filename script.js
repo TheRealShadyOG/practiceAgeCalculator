@@ -8,3 +8,8 @@ let currentYear = currentDate.getFullYear();
 let todayDate = currentDay + "-" + currentMonth + "-" + currentYear;
 
 document.getElementById('todaydate').innerHTML=todayDate;
+
+// Asking for birthdate
+const birthDate = prompt("What is your Birthdate? DD-MM-YYYY");
+
+document.getElementById("yourbirthdate").innerHTML=birthDate;
