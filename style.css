@@ -77,3 +77,8 @@ button {
     border-radius: 2px;
     background-color: white;
 }
+
+.bodyhelp {
+    text-align: center;
+    margin-top: 24px;
+}
