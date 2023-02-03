@@ -13,3 +13,9 @@ document.getElementById('todaydate').innerHTML=todayDate;
 const birthDate = prompt("What is your Birthdate? DD-MM-YYYY");
 
 document.getElementById("yourbirthdate").innerHTML=birthDate;
+
+// Creating variables for birthdate
+let birthYear = Number(birthDate.slice(-4))
+let birthMonth = Number(birthDate.slice(3,5))
+let birthDay = Number(birthDate.slice(0,2))
+
