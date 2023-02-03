@@ -1,13 +1,13 @@
 // Calculating current date
 const currentDate = new Date();
 
-let currentDay = ('0' + currentDate.getDate()).slice(-2);
-let currentMonth = ('0' + (currentDate.getMonth()+1)).slice(-2)
-let currentYear = currentDate.getFullYear();
+let currentDay = Number(("0" + currentDate.getDate()).slice(-2));
+let currentMonth = Number(("0" + (currentDate.getMonth()+1)).slice(-2));
+let currentYear = Number(currentDate.getFullYear());
 
-let todayDate = currentDay + "-" + currentMonth + "-" + currentYear;
+let todayDate = ('0' + currentDate.getDate()).slice(-2) + "-" + ('0' + (currentDate.getMonth()+1)).slice(-2) + "-" + currentDate.getFullYear();
 
-document.getElementById('todaydate').innerHTML=todayDate;
+document.getElementById("todaydate").innerHTML=todayDate;
 
 // Asking for birthdate
 const birthDate = prompt("What is your Birthdate? DD-MM-YYYY");
