@@ -3,7 +3,7 @@ body, button, input {
     color: grey;
 }
 
-#todaydate, input, #results {
+#todaydate, #yourbirthdate, #results {
     border: 1px solid grey;
     border-radius: 2px;
     background-color: white;
@@ -36,19 +36,28 @@ body {
     gap: 8px;
 }
 
-.currentdate {
+.bodymaintext {
     display: flex;
+    gap: 4px;
+}
+
+.bodylabels {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    gap: 44px;
-    margin-left: 26px;
+    gap: 16px;
+    margin-top: 4px;
+    margin-bottom: 2px;
+}
+
+.bodydates {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 .results {
-    display: flex;
-    gap: 32px;
-    margin-left: 20px;
-    margin-bottom: 16px;
-    font-size: 24px;
+    font-size: 22px;
 }
 
 .selectors {
