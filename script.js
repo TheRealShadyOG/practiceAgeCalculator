@@ -25,3 +25,12 @@ if (currentMonth > birthMonth) {
 } else {
     currentYearsOld = currentYear - birthYear - 1;
 }
+
+// Making Years button work
+const yearsButton = document.querySelector(".years")
+
+function yearsOld() {
+    document.getElementById("results").innerHTML= currentYearsOld + " Years Old"
+}
+
+yearsButton.addEventListener("click", yearsOld)
