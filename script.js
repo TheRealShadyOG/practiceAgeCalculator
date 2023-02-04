@@ -27,10 +27,19 @@ if (currentMonth > birthMonth) {
 }
 
 // Making Years button work
-const yearsButton = document.querySelector(".years")
+const yearsButton = document.querySelector(".years");
 
 function yearsOld() {
-    document.getElementById("results").innerHTML= currentYearsOld + " Years Old"
+    document.getElementById("results").innerHTML= currentYearsOld + " Years Old";
 }
 
-yearsButton.addEventListener("click", yearsOld)
+yearsButton.addEventListener("click", yearsOld);
+
+// Calculating months of age
+if (currentDay > birthDay) {
+    currentAgeMonths = (currentMonth + 12) - birthMonth;
+} else {
+    currentAgeMonths = (currentMonth + 12) - birthMonth - 1;
+}
+
+let currentMonthsOld = (currentYearsOld * 12) + currentAgeMonths;
