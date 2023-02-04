@@ -43,3 +43,12 @@ if (currentDay > birthDay) {
 }
 
 let currentMonthsOld = (currentYearsOld * 12) + currentAgeMonths;
+
+// Making months button work
+const monthsButton = document.querySelector(".months")
+
+function monthsOld() {
+    document.getElementById("results").innerHTML= currentMonthsOld + " Months Old"
+}
+
+monthsButton.addEventListener("click", monthsOld)
