@@ -19,3 +19,9 @@ let birthYear = Number(birthDate.slice(-4));
 let birthMonth = Number(birthDate.slice(3,5));
 let birthDay = Number(birthDate.slice(0,2));
 
+// Calculating years of age
+if (currentMonth > birthMonth) {
+    currentYearsOld = currentYear - birthYear;
+} else {
+    currentYearsOld = currentYear - birthYear - 1;
+}
